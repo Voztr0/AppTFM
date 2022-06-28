@@ -15,24 +15,20 @@ pipeline {
   stages {
     stage('install') {
       steps {
-        git branch: 'develop', url: 'https://github.com/LuisArana631/Taller_Jenkins.git'
-        dir('frontend') {
-          sh 'npm install'
-        }
+        git branch: 'develop', url: 'https://github.com/Voztr0/AppTFM.git'
+        sh 'npm install'
       }
     }
 
     stage('test') {
       steps {
-        dir('frontend') {
-          sh 'npm run test'
-        }
+        sh 'npm run test'
       }
     }
 
     stage('build') {
       steps {
-        dir('frontend') {
+        dir('/') {
           script {
             try {
               sh 'docker stop ${container_name}'
