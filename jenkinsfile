@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+node('jenkins-slave') {
   tools {
     nodejs "Node"
   }
@@ -47,5 +47,6 @@ pipeline {
       }
     }
   }
+}
 
 }
