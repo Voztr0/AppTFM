@@ -1,8 +1,5 @@
 pipeline {
 agent  { label 'jenkins-slave'}
-  tools {
-    nodejs "Node"
-  }
 
   parameters {
     string(name: 'container_name', defaultValue: 'pagina_web', description: 'Nombre del contenedor de docker.')
