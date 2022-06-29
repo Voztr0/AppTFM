@@ -22,12 +22,6 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('DevOps');
   });
 
-  it(`should be true`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.newFunction(2)).toEqual(true);
-  });
-
   it('suma 2+2 = 4', () => {
     const suma = 2 + 2;
     expect(suma).toBe(4);
