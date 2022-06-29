@@ -15,7 +15,7 @@ pipeline {
   stages {
     stage('install') {
       steps {
-        git branch: 'main', url: 'https://github.com/Voztr0/AppTFM.git'
+        git branch: 'develop', url: 'https://github.com/Voztr0/AppTFM.git'
         sh 'npm install'
       }
     }
