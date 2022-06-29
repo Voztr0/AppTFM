@@ -25,7 +25,7 @@ describe('AppComponent', () => {
   it(`should be true`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.newFunction(2)).toEqual(false);
+    expect(app.newFunction(7)).toEqual(true);
   });
 
   it('suma 2+2 = 4', () => {
