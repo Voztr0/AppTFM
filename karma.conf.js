@@ -40,9 +40,9 @@ module.exports = function (config) {
     browserNoActivityTimeout: 30000,
     browsers: ['ChromeHeadlessNoSandbox'],
     customLaunchers: {
-      ChromeHeadless: {
+      ChromeHeadlessNoSandbox: {
         base: 'ChromeHeadless',
-        flags: ['--no-sandbox', '--headless', '--disable-gpu', '--remote-debugging-port=9222'],
+        flags: ['--no-sandbox'],
       },
     },
     singleRun: true,
