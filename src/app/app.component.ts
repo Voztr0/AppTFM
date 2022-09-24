@@ -7,12 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DevSecOps';
-
-  public newFunction(value: Number) {
-    if (value > 1) {
-      return true;
-    } else {
-      return false;
-    }
-  }
 }
