@@ -27,4 +27,9 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.newFunction(7)).toEqual(true);
   });
+
+  it('suma 2+2 = 4', () => {
+    const suma = 2 + 2;
+    expect(suma).toBe(4);
+  });
 });
