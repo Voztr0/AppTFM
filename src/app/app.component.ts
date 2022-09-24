@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'DevOps';
+  title = 'DevSecOps';
 
   public newFunction(value: Number) {
     if (value > 1) {
